@@ -43,7 +43,7 @@ public class BlackJack {
 	
 	public void ordenar() {
 		Carta aux;
-		for(int i=0;i<mazo.length;i++) {
+		for(int i=1;i<mazo.length;i++) {
 			for(int j=0;j<mazo.length-1;j++) {
 				if(mazo[j]!=null && mazo[j+1]!=null && mazo[j].getCodigo()>mazo[j+1].getCodigo()) {
 					aux=mazo[j];
@@ -77,7 +77,7 @@ public class BlackJack {
 	
 	public Carta siguiente() {
 		Carta siguiente;
-		for(int i=1;i<mazo.length;i++) {
+		for(int i=0;i<mazo.length;i++) {
 			for(int j=0;j<cartasJugador.length;j++) {
 				if(mazo[i]!=null && cartasJugador[j]==null) {
 					cartasJugador[j]=mazo[i];
