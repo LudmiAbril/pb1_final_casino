@@ -77,7 +77,7 @@ public class BlackJack {
 	
 	public Carta siguiente() {
 		Carta siguiente;
-		for(int i=0;i<mazo.length;i++) {
+		for(int i=1;i<mazo.length;i++) {
 			for(int j=0;j<cartasJugador.length;j++) {
 				if(mazo[i]!=null && cartasJugador[j]==null) {
 					cartasJugador[j]=mazo[i];
